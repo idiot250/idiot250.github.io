@@ -1,4 +1,4 @@
-const button = document.querySelector("#theme-toggle");
-button.addEventListener("click", () => {
+const themeToggle = document.querySelector("#theme-toggle");
+themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("light");
 });

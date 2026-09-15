@@ -1,6 +1,13 @@
 :root {
             --cube-size: 12px;
             --cube-gap: 3px;
+	    --l0: #ebedf0; 
+	    --l1: #c0c0c0;
+    	    --l2: #969696;
+    	    --l3: #666666;
+    	    --l4: #1b1f23;
+	    --heatmap-bg: #ddded766;
+
         }
 
         .heatmap {
@@ -10,8 +17,8 @@
             border-radius: 6px;
             width: max-content;
             max-width: 100%;
-            background: var(--surface);
-            color: #24292f;
+            background: var(--heatmap-bg);
+            color: var(--text);
             user-select: none;
             box-sizing: border-box;
         }
@@ -33,7 +40,7 @@
             grid-template-rows: repeat(7, var(--cube-size));
             grid-gap: var(--cube-gap);
             font-size: 9px;
-            color: #888;
+            color: var(--text);
             line-height: var(--cube-size);
             padding-top: 0px;
         }
@@ -50,14 +57,16 @@
             grid-auto-flow: column;
             grid-auto-columns: var(--cube-size); 
             grid-gap: var(--cube-gap);
-	    background: var(--surface);
+	    background: var(--heatmap-bg);
+	    padding: 8px;
+	    border-radius: 5px;
 	}  
         
         .cube {
             width: var(--cube-size);
             height: var(--cube-size);
             border-radius: 2px;
-            background-color: #ebedf0;
+            background-color: var(--l0);
             outline: 1px solid rgba(27,31,35,0.04);
             transition: transform 0.1s ease;
             box-sizing: border-box;
@@ -69,11 +78,11 @@
             z-index: 10;
         }
         
-        .level-0 { background-color: #ebedf0; }
-        .level-1 { background-color: #c0c0c0; }
-        .level-2 { background-color: #969696; }
-        .level-3 { background-color: #666666; }
-        .level-4 { background-color: #1b1f23; }
+        .level-0 { background-color: var(--l0); }
+        .level-1 { background-color: var(--l1); }
+        .level-2 { background-color: var(--l2); }
+        .level-3 { background-color: var(--l3); }
+        .level-4 { background-color: var(--l4); }
         
         .heatmap-footer {
             display: flex;
@@ -81,7 +90,7 @@
             align-items: center;
             margin-top: 10px;
             font-size: 11px;
-            color: #57606a;
+            color: var(--text);
         }
         
         .heatmap-legend {

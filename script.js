@@ -28,11 +28,11 @@ function injectNavbar() {
 
     navElement.innerHTML = `
          <aside class="navbar">
-	<a href="/">home</a><br>
-	<a href="/logs">logs</a><br>
-	<a href="/projects">projects</a><br>
-	<a href="/photos">photos</a><br>
-	<a href="/music">music</a><br>
+	<a href="/">home</a>
+	<a href="/logs">logs</a>
+	<a href="/projects">projects</a>
+	<a href="/photos">photos</a>
+	<a href="/music">music</a>
         <a href="/links">links</a>
 </aside>
     `;
